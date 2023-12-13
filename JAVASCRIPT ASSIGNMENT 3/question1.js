@@ -7,8 +7,8 @@ let name = readlineSync.question("WHAT IS YOUR NAME : ");
 
 let message = greetings(name);
 
-function greetings(){
-    return name
+function greetings(name){
+    return  name;
 }
 let id =greetings();
-console.log("Hai, How are you ",id);
+console.log("Hello ",message);
