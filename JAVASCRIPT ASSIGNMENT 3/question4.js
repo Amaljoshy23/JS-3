@@ -4,16 +4,14 @@
 
 var readlineSync = require('readline-sync');
 
-let a=readlineSync.question('Enter a number : ');
+let n=readlineSync.question('Enter a number : ');
 
-let sum=0;
-
-sumOfSquares();
-
-function sumOfSquares(){
-    for(i=1 ;i <= a; i = i + 1){
+let sum = 0;
+function sumOfSquares(n){
+    for(i=1 ;i <= n; i = i + 1){
         sum = sum + i ** 2;
         
     }
     console.log("The sum of squares  =",sum);
 }
+sumOfSquares(n);
