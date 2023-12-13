@@ -2,20 +2,15 @@
 
 
 
-var readlineSync = require('readline-sync');
 
+var readlineSync = require("readline-sync");
 
-let number=readlineSync.question('Enter the last number : ');
- 
-let i = 0
+let lastnumber = parseInt(readlineSync.question("Enter the last number : "));
 
-function printNumber(){
-    
-    for( i=1 ; i<=number ;  i = i + 1){
-      console.log(i);
-    }
-   
+printNumbers(lastnumber);
+
+function printNumbers(lastnumber) {
+  for (let i = 1; i <= lastnumber; i = i + 1) {
+    console.log(i);
+  }
 }
-
-printNumber();
-
